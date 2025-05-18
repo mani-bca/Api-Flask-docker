@@ -1,8 +1,12 @@
 
-name: Deploy Flask App to EKS
+name: Flask App build
 
 on:
   workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
 
 jobs:
   deploy:
